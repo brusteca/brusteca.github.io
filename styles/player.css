@@ -1,0 +1,30 @@
+body.main {
+	max-width:800px;
+	padding: 0;
+	background-color: #000;
+}
+
+@media (min-width: 800px) {
+	#unityContainer {
+		height: 600px;
+	}
+}
+
+@media (max-width: 800px) {
+	#unityContainer {
+		height: calc(100vw * 0.75);
+	}
+
+	p {
+		margin: 1.5rem 1rem;
+	}
+}
+
+p {
+	color: #888;
+	/* color: #0e6413; */
+}
+
+.instructions {
+	padding-top: 3rem;
+}
