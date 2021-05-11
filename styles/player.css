@@ -22,7 +22,11 @@ body.main {
 
 p {
 	color: #888;
-	/* color: #0e6413; */
+}
+
+h1 {
+	color: #888;
+	text-align: center;
 }
 
 .instructions {
