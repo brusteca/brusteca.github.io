@@ -22,6 +22,7 @@ body.main {
 
 p {
 	color: #888;
+	text-align: center;
 }
 
 h1 {
@@ -29,6 +30,14 @@ h1 {
 	text-align: center;
 }
 
+.return {
+	text-align: left;
+}
+
 .instructions {
+	padding-bottom: 2rem;
+}
+
+.after-text {
 	padding-top: 3rem;
 }
