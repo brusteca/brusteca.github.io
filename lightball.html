@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>LIGHTBALL | Bruno Stecanella</title>
+		<meta name="title" content="LIGHTBALL | Bruno Stecanella">
+		<meta name="description" content="Play LIGHTBALL online.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://bruno.stecanella.com/lightball.html">
+		<meta property="og:title" content="LIGHTBALL | Bruno Stecanella">
+		<meta property="og:description" content="Play LIGHTBALL in your browser">
+		<meta property="og:image" content="http://bruno.stecanella.com/img/lightball-02.png">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="http://bruno.stecanella.com/lightball.html">
+		<meta property="twitter:title" content="LIGHTBALL | Bruno Stecanella">
+		<meta property="twitter:description" content="Play LIGHTBALL in your browser">
+		<meta property="twitter:image" content="http://bruno.stecanella.com/img/lightball-02.png">
+
+		<link rel="shortcut icon" href="img/favicon/favicon.ico?v=01">
+
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/player.css">
+	</head>
+	<body class="main">
+		<p class="return"><a href=".">< Return to main page</a></p>
+		<h1>LIGHT BALL</h1>
+		<p class="instructions center-align">Use the <strong>mouse</strong> to move and <strong>click</strong> or <strong>space</strong> to shoot a new ball.</p>
+		<canvas id="unity-canvas" width=800 height=600 style="width: 800px; height: 600px; background: #231F20"></canvas>
+		<script src="lightball/Build/Web.loader.js"></script>
+		<script>
+			createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "lightball/Build/Web.data",
+				frameworkUrl: "lightball/Build/Web.framework.js",
+				codeUrl: "lightball/Build/Web.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "Booombox Boutique Boureau",
+				productName: "LIGHTBALL",
+				productVersion: "0.1",
+				// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+				// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+			});
+		</script>
+		<p class="after-text center-align">
+			LIGHTBALL is a <strong>work in progress</strong>! Please send me any comments and bug reports.
+		</p>
+		<h3>My thoughts on the project</h3>
+		<p>
+			In order to improve my Unity skills I made LIGHTBALL, an Arkanoid clone. Because the actual game mechanics are simple and mostly known I could concentrate on the implementation details, which concerned most of the new things I wanted to try. Also, since the visuals are abstract lights and shapes, I was able to rely almost entirely on myself for the visuals — I'm not much of a 3D modeler.
+		</p>
+		<p>
+			In this project I tried out things I hadn't worked with before, like custom shaders, procedural generation, and Unity's physics system (just 2D in this case, since the gameplay is confined to a single plane). All the sound of the game is procedurally synthesized on the engine itself, although Unity doesn't support this on HTML5 so I had to fall back to using sound samples (bummer).
+		</p>
+		<p>
+			Version 0.3 took me about two months of work, and I'm pretty happy with how it turned out. I learned a lot about game design, shaders, sound, and Unity's """quirks""". I'm currently working on another iteration of it, mostly concerning the graphics, so stay tuned!
+		</p>
+		<br/>
+		<br/>
+		<div class="footer">
+			<p>Want to contact me? Ping me on <a href="https://www.linkedin.com/in/brusteca/" target="_blank">LinkedIn</a>.</p>
+		</div>
+	</body>
+</html>

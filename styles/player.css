@@ -22,12 +22,17 @@ body.main {
 
 p {
 	color: #888;
-	text-align: center;
 }
 
 h1 {
 	color: #888;
 	text-align: center;
+}
+
+h3 {
+	margin-top: 4rem;
+	color: #888;
+	font-size: 1.2rem;
 }
 
 .return {
@@ -40,4 +45,8 @@ h1 {
 
 .after-text {
 	padding-top: 3rem;
+}
+
+.center-align {
+	text-align: center;
 }
