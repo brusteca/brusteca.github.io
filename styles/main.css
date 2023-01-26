@@ -10,14 +10,19 @@ body.main {
 }
 
 h2 {
-	margin: 3rem 0 1rem;
+	margin: 1rem 0 1rem;
+}
+
+.intro {
+	margin-bottom: 3rem;
 }
 
 a {
-	color: #0e6413;
+	color: #179e1f;
 	text-decoration: none;
 }
 
+li a:hover,
 p a:hover {
 	text-decoration: underline;
 }
@@ -45,7 +50,7 @@ p a:hover {
 
 .card-title {
 	display: inline-block;
-	color: #0e6413;
+	color: #179e1f;
 	font-size: 2rem;
 	margin: 0.6rem 0;
 	padding-right: 1rem;
