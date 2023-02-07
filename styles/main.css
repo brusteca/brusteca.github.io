@@ -10,7 +10,7 @@ body.main {
 }
 
 h2 {
-	margin: 1rem 0 1rem;
+	margin: 3rem 0 1rem;
 }
 
 .intro {
@@ -45,15 +45,18 @@ p a:hover {
 .card {
 	width: 100%;
 	margin: auto;
-	padding-bottom: 2rem;
 }
 
 .card-title {
 	display: inline-block;
 	color: #179e1f;
 	font-size: 2rem;
-	margin: 0.6rem 0;
+	margin: 2rem 0 0.6rem;
 	padding-right: 1rem;
+}
+
+.first-card {
+	margin-top: 0;
 }
 
 .card-year {
